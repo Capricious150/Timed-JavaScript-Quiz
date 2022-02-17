@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <!-- This is the header element. It will contain the timer on the right, and a view highscores option -->
+        <button id="viewHighScores">View Most Recent Score!</button>
+        <h4 id="score">Current Score: <span id="currentScore"></span></h4>
+        <h4 id="timer">Time Remaining: <span id="timeSpan"></span></h4>
+    </header>
+
+    <main>
+
+        <div class = "question" id="start">
+            <h4>HOW IT WORKS</h4>
+            <ul>
+                <li>Getting multiple answers correct in a row is worth more points!</li>
+                <li>Getting an answer wrong reduces remaining time by 10 seconds, and resets the score multiplier!</li>
+                <li>The quiz ends when all the questions have been answered, or the timer reaches 0!</li>
+            </ul>
+            <div class="answers">
+                <!-- This div will have a button to start the game -->
+                <button id="startButton">Start the Quiz!</button>
+            </div>
+        </div>
+
+        <div class="question" id="q1">
+            <!-- This is the first question. It will be hidden until the game begins -->
+            <!-- This is the question -->
+            <h3>Which is an example of a Boolean value?</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w1">1. 22</button>
+                <button id="w2">2. "Chocolate Cake"</button>
+                <button id="c1">3. true</button>
+                <button id="w3">4. 1, 2, 3, 4</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q2">
+            <!-- This is the second question. It will be hidden until the first question has been answered -->
+
+            <h3>Which of the following can be used to combine two existing arrays?</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w4">1. splice()</button>
+                <button id="c2">2. concat()</button>
+                <button id="w5">3. toUpperCase()</button>
+                <button id="w6">4. pop()</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q3">
+            <!-- This is the third question. It will be hidden until the second question has been answered -->
+
+            <h3>To write "Hello World!" to the console, which should be used:</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w7">1. window.log("Hello World!")</button>
+                <button id="w8">2. console.print("Hello World!")</button>
+                <button id="c3">3. console.log("Hello World!")</button>
+                <button id="w9">4. var log = "Hello World!"</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q4">
+            <!-- This is the fourth question. It will be hidden until the third question has been answered -->
+
+            <h3>localeStorage allows a user to _____</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="c4">1. save key/value pairs in the browser</button>
+                <button id="w10">2. view API elements</button>
+                <button id="w11">3. return the length of an array</button>
+                <button id="w12">4. dynamically add elements to a container</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q5">
+            <!-- This is the fifth question. It will be hidden until the fourth question has been answered -->
+
+            <h3>What are two objects that can be used together to return a pseudo-random integer?</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w13">1. math.random() and math.log()</button>
+                <button id="w14">2. window.prompt() and math.pow()</button>
+                <button id="w15">3. math.min() and math.max()</button>
+                <button id="c5">4. math.floor() and math.random()</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q6">
+            <!-- This is the sixth question. It will be hidden until the fifth question has been answered -->
+
+            <h3>The acronym "DOM" refers to _____</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w16">1. Delta Oriented Modals</button>
+                <button id="w17">2. Displayed Object Map</button>
+                <button id="c6">3. Document Object Model</button>
+                <button id="w18">4. Discarded/Obsolete Methods</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q7">
+            <!-- This is the seventh question. It will be hidden until the sixth question has been answered -->
+
+            <h3>Which of the following is NOT a type of loop?</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w19">1. for loop</button>
+                <button id="w20">2. while loop</button>
+                <button id="w21">3. while do loop</button>
+                <button id="c7">4. random loop</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q8">
+            <!-- This is the eigth question. It will be hidden until the seventh question has been answered -->
+
+            <h3>Which of the following examples checks to see if two values are strictly equal?</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w22">1. a = b</button>
+                <button id="w23">2. a == b</button>
+                <button id="c8">3. a === b</button>
+                <button id="w24">4. a != b</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q9">
+            <!-- This is the ninth question. It will be hidden until the eigth question has been answered -->
+
+            <h3>What types of brackets should be used to contain the body of a function?</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="w25">1. []</button>
+                <button id="c9">2. {}</button>
+                <button id="w26">3. ()</button>
+                <button id="w27">4. <></button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="question" id="q10">
+            <!-- This is the final question. It will be hidden until the ninth question has been answered -->
+
+            <h3>What code base is Javascript built on?</h3>
+
+            <div class="answers">
+                <!-- These are the options -->
+                <button id="c10">1. C++</button>
+                <button id="w28">2. PHP</button>
+                <button id="w29">3. Assembly</button>
+                <button id="w30">4. Java</button>
+            </div>
+        </div>
+
+        <div class="question" id = "scoreScreen">
+            <h3>All done!</h3>
+            <form>
+                <h3>Your score is: <span id="finalScore"></span> out of a possible 55!</h3>
+                <label for="initials">Enter your initials: </label>
+                <input type="text" id="initials" name="initials">
+                <input type="submit" id = "submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="question" id = "highScoreScreen">
+            <h1>Most Recent Score:</h1>
+            <div class="answers">
+                <ul id="scoresList">
+
+                </ul>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
