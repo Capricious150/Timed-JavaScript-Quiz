@@ -8,7 +8,7 @@ Load the page referenced in the header above in a browser.
 Follow the onscreen instructions. Interact with the page by using the on-screen buttons.
 
 
-![Preview Image](/assets/images/Preview.png)
+![Preview Image](/Assets/images/Preview.png)
 
 ### Design and Philosophy:
 This was a fun little project. 
